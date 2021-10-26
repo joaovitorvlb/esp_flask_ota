@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Upload Platform Image</h2>
+<form action="{{ url_for('device.upload') }}" method=post enctype=multipart/form-data class=add-entry>
+    <dl>
+        <dt>Binary file upload:
+        <dd><input type=file name=file>
+        <dd><input type=submit value=Upload>
+    </dl>
+</form>
+{% endblock %}

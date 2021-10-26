@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Platforms</h2>
+<ul class="list-group">
+    {% for file in files %}
+    <li class="list-group-item text-center"> {{file}} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
